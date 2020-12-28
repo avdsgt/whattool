@@ -16,6 +16,7 @@ echo "
   |   |   |  | |     __, _|_    | __   __  | | 
   |   |   |  |/ \   /  |  |   _ |/  \_/  \_|/  
    \_/ \_/   |   |_/\_/|_/|_/(_/ \__/ \__/ |__/"
+sleep 2
 echo ""
 echo "<<< === === OS Information === === >>>"
 echo  "" 
@@ -33,7 +34,7 @@ echo BUG_REPORT_URL=$(grep -oP '(?<=^BUG_REPORT_URL=).+' /etc/os-release)
 
 
 echo ""
-
+sleep 1
 
 
 
@@ -92,6 +93,8 @@ case $input in
 	12)
 	echo "You Selected Social Engineering Tools"
 	;;
+	*)
+	echo "Please Try Again"
 esac
 
 
